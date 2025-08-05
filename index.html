@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet" href="./css/cabecalho.css">
     <link rel="stylesheet" href="./css/produtos.css">
+    <link rel="stylesheet" href="./css/rodape.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
@@ -80,107 +81,100 @@
             </ul>
         </section>
     </main>
-    <footer>
-        <nav>
-            <h3>Institucional</h3>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#perguntas-frequentes">Perguntas-frequentes</a></li>
-                <li><a href="#fale-conosco">Fale conosco</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>Ajuda</h3>
-            <ul>
-                <li><a href="#trocas">Trocas e devoluções</a></li>
-                <li><a href="#termos">Termos e condições</a></li>
-                <li><a href="#politica">Política de privacidade</a></li>
-                <li><a href="#padrao">Padrão de Qualidade</a></li>
-            </ul>
-        </nav>
-        <nav>
-            <h3>Endereço</h3>
-            <ul>
-                <li><a href="#">Rua vale do silício</a></li>
-                <li>São Francisco, Califórnia</li>
-                <li>Estados Unidos da América</li>
-                <li><a href="#">(34) 11234-54678</a></li>
-                <li><a href="#">vendas@ecommercedd.com</a></li>
-        </nav>
-        <div>
+    <footer class="rodape">
+        <div class="container">
+            <nav>
+                <h3>Institucional</h3>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#perguntas-frequentes">Perguntas-frequentes</a></li>
+                    <li><a href="#fale-conosco">Fale conosco</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Ajuda</h3>
+                <ul>
+                    <li><a href="#trocas">Trocas e devoluções</a></li>
+                    <li><a href="#termos">Termos e condições</a></li>
+                    <li><a href="#politica">Política de privacidade</a></li>
+                    <li><a href="#padrao">Padrão de Qualidade</a></li>
+                </ul>
+            </nav>
+            <nav>
+                <h3>Endereço</h3>
+                <ul>
+                    <li><a href="#">Rua vale do silício</a></li>
+                    <li>São Francisco, Califórnia</li>
+                    <li>Estados Unidos da América</li>
+                    <li><a href="#">(34) 11234-54678</a></li>
+                    <li><a href="#">vendas@ecommercedd.com</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="copyright">
             <p>@2024 - Todos os direitos reservados</p>
         </div>
     </footer>
 
-    <!-- [1] -->
-    <div id="modal-1" class="modal" aria-hidden="true">
+    <!-- <div id="modal-1" class="modal" aria-hidden="true"> -->
+    <!-- <div tabindex="-1" data-micromodal-close> -->
+    <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+        <header>
+            <h2 id="modal-1-title">
+                Carrinho de Compras
+            </h2>
+            <button aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <div id="modal-1-content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Descrição</th>
+                        <th>Preço Unitário</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th></th>
+                    </tr>
+                </thead>
 
-        <!-- [2] -->
-        <div tabindex="-1" data-micromodal-close>
+                <body>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Roxa">
+                        </td>
+                        <td>Camiseta Dev em Dobro - Roxa</td>
+                        <td>R$ 89,90</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>R$ 89,90</td>
+                        <td><button id="deletar">Deletar</button></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/images/caneca_devemdobro.jpg" alt="caneca_devemdobro">
+                        </td>
+                        <td>caneca_devemdobro</td>
+                        <td>R$ 49,90</td>
+                        <td><input type="number" value="1" min="1"></td>
+                        <td>R$ 49,90</td>
+                        <td><button id="deletar">Deletar</button></td>
+                    </tr>
+                </body>
+            </table>
 
-            <!-- [3] -->
-            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
-
-
-                <header>
-                    <h2 id="modal-1-title">
-                        Carrinho de Compras
-                    </h2>
-
-                    <!-- [4] -->
-                    <button aria-label="Close modal" data-micromodal-close></button>
-                </header>
-
-                <div id="modal-1-content">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Produto</th>
-                                <th>Descrição</th>
-                                <th>Preço Unitário</th>
-                                <th>Quantidade</th>
-                                <th>Total</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-
-                        <body>
-                            <tr>
-                                <td>
-                                    <img src="./assets/images/camiseta_roxa.jpg" alt="Camiseta Roxa">
-                                </td>
-                                <td>Camiseta Dev em Dobro - Roxa</td>
-                                <td>R$ 89,90</td>
-                                <td><input type="number" value="1" min="1"></td>
-                                <td>R$ 89,90</td>
-                                <td><button id="deletar">Deletar</button></td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <img src="./assets/images/caneca_devemdobro.jpg" alt="caneca_devemdobro">
-                                </td>
-                                <td>caneca_devemdobro</td>
-                                <td>R$ 49,90</td>
-                                <td><input type="number" value="1" min="1"></td>
-                                <td>R$ 49,90</td>
-                                <td><button id="deletar">Deletar</button></td>
-                            </tr>
-                        </body>
-                    </table>
-
-                    <div>
-                        <span id="total-carrinho">Total: R$ 139,80</span>
-                        <button id="finalizar-compra">Finalizar Compra</button>
-                    </div>
-
-                </div>
+            <div>
+                <span id="total-carrinho">Total: R$ 139,80</span>
+                <button id="finalizar-compra">Finalizar Compra</button>
             </div>
+
         </div>
+    </div>
+    <!-- </div> -->
 
 
-        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
 
-</html>
+</h
