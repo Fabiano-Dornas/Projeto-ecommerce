@@ -7,27 +7,45 @@
     <title>E-commerce Master</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/estilos.css">
-    
+    <link rel="stylesheet" href="./css/cabecalho.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header class="cabecalho">
-        <a href="/">
-            <img src="./assets/images/logo.svg" alt="E-commerce Master Logo" class="logo">
-            <h1>E-commerce Master</h1>
-        </a>
-        <nav class="menu">
-            <ul>
-                <li><a href="/home">Home</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/produtos">Produtos</a></li>
-                <li><a href="/perguntas">Perguntas frequentes</a></li>
-                <li><a href="/contato">Fale conosco</a></li>
-            </ul>
-        </nav>
-        <button>
-            <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de Compras" class="carrinho">
-        </button>
+        <div class="header-conteudo">
+            <div class="header-esquerda">
+
+                <button class="menu-hamburguer">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <a class="logo" href="/">
+                    <img src="./assets/images/logo.svg" alt="E-commerce Master Logo">
+                </a>
+            </div>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/sobre">Sobre</a></li>
+                    <li><a href="/produtos">Produtos</a></li>
+                    <li><a href="/perguntas">Perguntas frequentes</a></li>
+                    <li><a href="/contato">Fale conosco</a></li>
+                </ul>
+            </nav>
+            <button class="botao-carrinho" data-micromodal-trigger="modal-1">
+                <img src="./assets/images/icone_carrinho.svg" alt="Carrinho de Compras">
+
+                <span id="contador-carrinho">0</span>
+            </button>
+            
+        </div>
     </header>
     <main>
         <section>
@@ -154,14 +172,14 @@
                     <div>
                         <span id="total-carrinho">Total: R$ 139,80</span>
                         <button id="finalizar-compra">Finalizar Compra</button>
-                </div>
+                    </div>
 
+                </div>
             </div>
         </div>
-    </div>
 
 
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+        <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 </body>
 
 </html>
