@@ -79,17 +79,18 @@ td.td-quantidade input {
     text-align: center;
 }
 
-td.btn-remover {
-    display: block;
-    background-image: url(../assets/images/icone_deletar.svg);
+button.btn-remover {
+    background-image: url('../assets/images/icone_deletar.svg');
     width: 24px;
     height: 24px;
     background-color: transparent;
     border: none;
-    padding: 0.5rem;
+    padding: 0;
     cursor: pointer;
-    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
+
 
 .container-preco {
     display: flex;
